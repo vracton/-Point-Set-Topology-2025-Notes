@@ -1,0 +1,119 @@
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{indentfirst}
+\usepackage{xspace}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage[letterpaper,margin=1in,headheight=15pt]{geometry}
+\usepackage{mathpazo}
+\usepackage{tikz-cd}
+\usepackage{booktabs}
+\usepackage{framed}
+\usepackage{float}
+\usepackage{listofitems}
+\usepackage{thmtools}
+\usepackage{dashrule}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{calligra}
+\usepackage{cleveref}
+\usepackage[titletoc,title]{appendix}
+\usepackage{tikz}
+\usepackage{enumerate}
+\usepackage{amsthm}
+\usepackage{physics}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{arrows}
+
+% Colors
+\definecolor{darkblue}{rgb}{0.1,0.1,0.7}
+\definecolor{darkred}{rgb}{0.5,0.1,0.1}
+\definecolor{darkgreen}{rgb}{0.0,0.42,0.06}
+\definecolor{shadecolor}{rgb}{0.85,0.85,0.85}
+
+% Hyperref setup
+\hypersetup{colorlinks=true,urlcolor=darkred,linkcolor=darkblue,citecolor=darkred}
+
+% Theorem environments
+\declaretheoremstyle[spaceabove=0.25cm,spacebelow=0.25cm,notefont=\normalfont\bfseries, notebraces={(}{)}]{theorem}
+\declaretheoremstyle[spaceabove=0.25cm,spacebelow=0.25cm,bodyfont=\normalfont,notefont=\normalfont\bfseries, notebraces={(}{)}]{noital}
+\declaretheoremstyle[spaceabove=0.25cm,spacebelow=0.25cm,bodyfont=\normalfont\color{darkgreen},notefont=\normalfont\bfseries, notebraces={(}{)}]{green}
+\declaretheoremstyle[spaceabove=0.25cm,spacebelow=0.25cm,bodyfont=\normalfont,notefont=\normalfont\bfseries,qed=$\qedsymbol$,notebraces={(}{)}]{proofstyle}
+
+\declaretheorem[name=Theorem,numberwithin=section,style=theorem]{theorem}
+\declaretheorem[name=Proposition,sibling=theorem,style=theorem]{proposition}
+\declaretheorem[name=Corollary,sibling=theorem,style=theorem]{corollary}
+\declaretheorem[name=Lemma,sibling=theorem,style=theorem]{lemma}
+\declaretheorem[name=Definition,sibling=theorem,style=noital]{definition}
+\declaretheorem[name=Example,sibling=theorem,style=noital]{example}
+\declaretheorem[name=Remark,sibling=theorem,style=noital]{remark}
+\declaretheorem[name=Exercise,numberwithin=section,style=noital]{exercise}
+\declaretheorem[name=Problem,style=noital]{problem}
+\declaretheorem[name=Solution,style=proofstyle,numbered=no]{solution}
+\declaretheorem[name=Axiom,style=theorem,numbered=no]{axiom}
+\declaretheorem[name=Conjecture,style=theorem,numbered=no]{conjecture}
+\declaretheorem[name=Theorem,style=theorem,numbered=no]{theorem*}
+\declaretheorem[name=Problem,style=noital,numbered=no]{problem*}
+\declaretheorem[name=Remark,sibling=theorem*,style=noital,numbered=no]{remark*}
+\declaretheorem[name=Topology,sibling=theorem,style=noital]{topology}
+
+
+\numberwithin{equation}{section}
+
+% Math macros
+\newcommand{\tops}{\texorpdfstring}
+\newcommand{\nid}{\noindent}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\fa}{{\mathfrak a}}
+\newcommand{\fp}{{\mathfrak p}}
+\newcommand{\cC}{\ensuremath{\mathcal C}}
+\newcommand{\R}{\ensuremath{\mathbb R}}
+\newcommand{\C}{\ensuremath{\mathbb C}}
+\newcommand{\Z}{\ensuremath{\mathbb Z}}
+\newcommand{\Q}{\ensuremath{\mathbb Q}}
+\newcommand{\half}{\ensuremath{\frac{1}{2}}}
+\newcommand{\IP}[1]{\langle#1\rangle}
+\newcommand{\ti}[1]{\textit{#1}}
+\newcommand{\tb}[1]{\textbf{#1}}
+\newcommand\cycle[2][\,]{%
+  \readlist\thecycle{#2}%
+(\foreachitem\i\in\thecycle{\ifnum\icnt=1\else#1\fi\i})%
+}
+
+\newcommand{\sign}[0]{\text{sgn}}
+\newcommand{\id}[0]{ \text{id}}
+\newcommand{\sym}[0]{\text{sym}}
+\newcommand{\alt}[0]{\text{alt}}
+\newcommand{\avg}[1]{\ensuremath{ \langle #1 \rangle}} 
+\newcommand{\legendre}[2]{\ensuremath{\left( \frac{#1}{#2} \right) }}
+
+
+% Operators
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Inn}{Inn}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\Pic}{Pic}
+\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\Frac}{Frac}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Specmax}{Specmax}
+\DeclareMathOperator{\Char}{Char}
+
+
+
+% Page style
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.5pt}
